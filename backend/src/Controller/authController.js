@@ -1,5 +1,5 @@
 import bcrypt from "bcrypt";
-import generateToken from "../utils/generateToken.js";
+import generateToken from "../Utils/generateToken.js";
 import User from "../models/user.js";
 
 // Signup Controller
