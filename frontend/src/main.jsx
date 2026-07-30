@@ -5,8 +5,8 @@ import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App.jsx";
 
-import { AuthProvider } from "./context/AuthContext";
-import { TodoProvider } from "./context/TodoContext";
+import { AuthProvider } from "./Context/AuthContext.jsx";
+import { TodoProvider } from "./Context/TodoContext";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
