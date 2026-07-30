@@ -8,7 +8,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "process.env.CLIENT_URL",
+    origin: "https://daily-flow-ebon.vercel.app",
     credentials: true,
   })
 );
