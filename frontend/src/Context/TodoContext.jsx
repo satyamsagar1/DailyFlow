@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useMemo } from "react";
-import api from "../utils/api";
+import api from "../Utils/api";
 
 const TodoContext = createContext();
 
