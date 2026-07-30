@@ -1,6 +1,6 @@
 import bcrypt from "bcrypt";
 import generateToken from "../Utils/generateToken.js";
-import User from "../models/user.js";
+import User from "../Models/user.js";
 
 // Signup Controller
 export const signup = async (req, res) => {

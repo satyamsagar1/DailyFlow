@@ -1,5 +1,5 @@
-import User from "../models/user.js";
-import Todo from "../models/todo.js";
+import User from "../Models/user.js";
+import Todo from "../Models/todo.js";
 
 // Create a new todos
 export const createTodo = async (req, res) => {
