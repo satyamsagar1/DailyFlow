@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import Navbar from "../components/Navbar";
-import TodoCalendar from "../components/Calender";
-import TodoForm from "../components/TodoForm";
-import TodoCard from "../components/TodoCard";
-import Loader from "../components/Loader";
-import EmptyState from "../components/EmptyState";
+import Navbar from "../Components/Navbar";
+import TodoCalendar from "../Components/Calender";
+import TodoForm from "../Components/TodoForm";
+import TodoCard from "../Components/TodoCard";
+import Loader from "../Components/Loader";
+import EmptyState from "../Components/EmptyState";
 
 import { useTodo } from "../context/TodoContext";
 import { useAuth } from "../context/AuthContext";
