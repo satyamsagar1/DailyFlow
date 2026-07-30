@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, Navigate } from "react-router-dom";
 import { Eye, EyeOff } from "lucide-react";
 
 import { useAuth } from "../Context/AuthContext";
@@ -7,7 +7,7 @@ import { useAuth } from "../Context/AuthContext";
 function Login() {
   const navigate = useNavigate();
 
-  const { login, loading } = useAuth();
+  const { login, user, loading } = useAuth();
 
   const [formData, setFormData] = useState({
     email: "",
@@ -33,7 +33,7 @@ function Login() {
 
     try {
       await login(formData);
-      navigate("/dashboard");
+      navigate("/dashboard", { replace: true });
     } catch (err) {
       setError(
         err.response?.data?.message ||
@@ -42,6 +42,11 @@ function Login() {
       );
     }
   };
+  if (loading) return null;
+
+  if (user) {
+    return <Navigate to="/dashboard" replace />;
+  }
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
