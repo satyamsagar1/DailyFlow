@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import TodoCalendar from "../Components/Calender";
 import TodoForm from "../Components/TodoForm";
-import TodoCard from "../Components/TodoCard";
+import TodoCard from "../Components/Todocard";
 import Loader from "../Components/Loader";
 import EmptyState from "../Components/EmptyState";
 
