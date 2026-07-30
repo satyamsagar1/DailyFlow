@@ -8,8 +8,8 @@ import TodoCard from "../Components/TodoCard";
 import Loader from "../Components/Loader";
 import EmptyState from "../Components/EmptyState";
 
-import { useTodo } from "../context/TodoContext";
-import { useAuth } from "../context/AuthContext";
+import { useTodo } from "../Context/TodoContext";
+import { useAuth } from "../Context/AuthContext";
 
 function Dashboard() {
   const navigate = useNavigate();
